@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "npm run dev",
+      "label": "dev",
+      "group": "build",
+      "isBackground": true
+    },
+    {
+      "type": "shell",
+      "command": "sh",
+      "args": [
+        "-lc",
+        "curl -s http://localhost:3000 | head -n 80"
+      ],
+      "label": "probe-html"
+    }
+  ]
+}
